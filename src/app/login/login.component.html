@@ -1,0 +1,11 @@
+<div class="login-container">
+  <h2>登入頁面</h2>
+  <div id="google-signin-button"></div>
+
+  <div *ngIf="googleUserData()">
+    <h3>使用者資料</h3>
+    <p>名稱: {{ googleUserName() }}</p>
+    <p>Email: {{ googleUserData()?.email }}</p>
+    <p>ID: {{ googleUserData()?.id }}</p>
+  </div>
+</div>
